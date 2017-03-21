@@ -1,83 +1,117 @@
-body{
-  font-family: Verdana;
-  margin: 0;
-  background: grey;
-}
-a.collapse {
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-.assignment-listing{
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-.assignments-container, .assignment-listing{
-  margin-top: 15px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:800px;
-  margin:auto;
-  border: black solid 1px;
-  position: center;
-  background: white;
+body {
+    font-family: Verdana;
+    margin: 0;
+    background: black;
 }
 
-.navbar{
-  background-color: #f1f1f1;
-  width:100%;
-  display: flex;
+a.collapse {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.assignmentlisting {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+ div.assignmentlisting:nth-child(odd) {
+    background-color: #00BCD4;
+}
+
+ div.assignmentlisting:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+/*div.assignmentdiv:nth-child(even),
+div.assignmentimg:nth-child(odd) {
+    order: 1;
+    flex: 1;
+    flex-wrap: wrap-reverse
+}
+
+div.assignmentdiv:nth-child(odd),
+div.assignmentimg:nth-child(even) {
+    order: 2;
+    flex: 6;
+    flex-wrap: wrap-reverse;
+}*/
+
+
+
+.assignmentscontainer,
+.assignmentlisting {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    border: black solid 1px;
+    position: center;
+    background: white;
+    flex-wrap: wrap-reverse;
+
+}
+
+.navbar {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
 }
 
 #assignment-form {
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  text-align: center;
-  width:600px;
-  margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    display: none;
 }
 
 #span {
-  border:solid;
-  text-align: center;
-  margin:auto;
-  float: none;
-  display:block;
-  width:200px;
-  font-size:22px;
+    border: solid;
+    text-align: center;
+    margin: auto;
+    float: none;
+    display: block;
+    width: 200px;
+    font-size: 22px;
 }
 
 .float-left {
-  flex:1;
+    flex: 1;
 }
+
 .float-right {
-  flex:1;
-  text-align:right;
+    flex: 1;
+    text-align: right;
 }
 
 select {
-  width:200px;
+    width: 200px;
 }
 
-button{
-  width:100px;
-  margin:auto;
+button {
+    width: 100px;
+    margin: auto;
 }
 
-nav link, nav a{
-  padding: 8px 16px;
-  color: black;
-  text-decoration: none;
-  font-size:22px;
+nav link,
+nav a {
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
 }
 
 a {
-  padding: 8px 16px;
+    padding: 8px 16px;
 }
 
-
-textarea, input{
-  margin: 8px;
+textarea,
+input {
+    margin: 8px;
 }
-

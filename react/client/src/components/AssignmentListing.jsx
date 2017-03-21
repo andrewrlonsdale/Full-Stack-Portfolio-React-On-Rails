@@ -4,14 +4,18 @@ import { Link, browserHistory } from 'react-router'
 const assignmentListing = function (props) {
 
     return (
-      <div className='assignment-listing'>
-          <h2 className='assignment-listing-title'>{props.title}</h2>
-          <img className='assignment-listing-iframe'src={props.img}  width="700" height="300"></img>
-          <p className='assignment-listing-url'>{props.description}</p>
-          <h3 className='assignment-listing-title'>Frontend: {props.frontend}</h3>
-          <h3 className='assignment-listing-title'>Backend: {props.backend}</h3>
-          <p className='assignment-listing-url'><a href={props.gitlink}>Github </a></p>
-          <p className='assignment-listing-url'><a href={props.projectlink}>Go To project </a></p>
+      <div className='assignmentlisting'>
+      <div className='imgdiv'>
+      <img className='assignmentimg'src={props.img}  width="700" height="500"></img>
+      </div>
+      <div className='assignmentdiv'>
+          <h2 className='assignmenttitle'>{props.title}</h2>
+          <p className='assignmentdescription'>{props.description}</p>
+          <h3 className='assignmentfrontend'>Frontend: {props.frontend}</h3>
+          <h3 className='assignmentbackend'>Backend: {props.backend}</h3>
+          <p className='assignmentgitlink'><a href={props.gitlink}>Github </a></p>
+          <p className='assignmentprojectlink'><a href={props.projectlink}>Go To project </a></p>
+          </div>
       </div>
   )
 
