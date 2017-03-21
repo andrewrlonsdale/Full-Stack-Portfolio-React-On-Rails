@@ -6,7 +6,7 @@ const assignmentListing = function (props) {
     return (
       <div className='assignmentlisting'>
       <div className='imgdiv'>
-      <img className='assignmentimg'src={props.img}  width="700" height="500"></img>
+      <img className='assignmentimg'src={props.img}  width="600" height="500"></img>
       </div>
       <div className='assignmentdiv'>
           <h2 className='assignmenttitle'>{props.title}</h2>

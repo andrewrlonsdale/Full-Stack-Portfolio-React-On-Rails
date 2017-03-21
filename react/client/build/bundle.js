@@ -12927,7 +12927,7 @@ var assignmentListing = function assignmentListing(props) {
         _react2.default.createElement(
             'div',
             { className: 'imgdiv' },
-            _react2.default.createElement('img', { className: 'assignmentimg', src: props.img, width: '700', height: '500' })
+            _react2.default.createElement('img', { className: 'assignmentimg', src: props.img, width: '600', height: '500' })
         ),
         _react2.default.createElement(
             'div',

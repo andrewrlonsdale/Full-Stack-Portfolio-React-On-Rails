@@ -22,21 +22,30 @@ a.collapse {
 
  div.assignmentlisting:nth-child(even) {
     background-color: #FFFFFF;
+     -webkit-flex-direction: row-reverse; /* Safari */
+      flex-direction:         row-reverse;
+    }
+}
+img.assignmentimg {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-/*div.assignmentdiv:nth-child(even),
+div.assignmentdiv:nth-child(even),
 div.assignmentimg:nth-child(odd) {
     order: 1;
     flex: 1;
-    flex-wrap: wrap-reverse
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 div.assignmentdiv:nth-child(odd),
 div.assignmentimg:nth-child(even) {
     order: 2;
     flex: 6;
-    flex-wrap: wrap-reverse;
-}*/
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 
 
@@ -51,8 +60,6 @@ div.assignmentimg:nth-child(even) {
     border: black solid 1px;
     position: center;
     background: white;
-    flex-wrap: wrap-reverse;
-
 }
 
 .navbar {
