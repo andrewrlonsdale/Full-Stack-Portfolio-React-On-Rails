@@ -17,29 +17,29 @@ user_one = User.create({
 
 user_one.assignments.create({
   title: "Project-1-Full-Stack-Challenge-Tracker-Ruby",
-  img: "bob",
+  img: "circuit.png",
   description: "Full-Stack-Web-App",
   frontend: "Html and Css",
   backend: "Ruby, Sql and Sinatra",
   gitlink: "https://github.com/andrewrlonsdale/Project-1-Full-Stack-Challenge-Tracker-Ruby",
-  projectlink: "bob"
+  projectlink: "http://circuit-audio.com/"
   })
 
 user_one.assignments.create({
   title: "Project-2-Full-Stack-Card-Game-Java",
-  img: "bob",
+  img: "circuit.png",
   description: "
   Blackjack card game created in Android studio
 ",
   frontend: "Java",
   backend: "Java",
   gitlink: "https://github.com/andrewrlonsdale/Project-2-Full-Stack-Card-Game-Java",
-  projectlink: "bob"
+  projectlink: "http://circuit-audio.com/"
   })
 
 user_one.assignments.create({
   title: "Project-3-Full-Stack-Educational-App-Javascript",
-  img: "bob",
+  img: "circuit.png",
   description: "The history of video games: a timeline
 An interactive webpage that takes the user on a journey through the colourful history of all things GAME.
 #MVP
@@ -47,7 +47,7 @@ Be able to scroll through a timeline which details the most noteworthy events in
   frontend: "Javascript-html-css-",
   backend: "Javascript, npm, mongodb, webpack, and custom-Api",
   gitlink: "https://github.com/andrewrlonsdale/Project-3-Full-Stack-Educational-App-Javascript",
-  projectlink: "bob"
+  projectlink: "http://circuit-audio.com/"
   })
 
 user_one.assignments.create({
