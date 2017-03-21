@@ -12923,46 +12923,54 @@ var assignmentListing = function assignmentListing(props) {
 
     return _react2.default.createElement(
         'div',
-        { className: 'assignment-listing' },
+        { className: 'assignmentlisting' },
         _react2.default.createElement(
-            'h2',
-            { className: 'assignment-listing-title' },
-            props.title
-        ),
-        _react2.default.createElement('img', { className: 'assignment-listing-iframe', src: props.img, width: '700', height: '300' }),
-        _react2.default.createElement(
-            'p',
-            { className: 'assignment-listing-url' },
-            props.description
+            'div',
+            { className: 'imgdiv' },
+            _react2.default.createElement('img', { className: 'assignmentimg', src: props.img, width: '700', height: '500' })
         ),
         _react2.default.createElement(
-            'h3',
-            { className: 'assignment-listing-title' },
-            'Frontend: ',
-            props.frontend
-        ),
-        _react2.default.createElement(
-            'h3',
-            { className: 'assignment-listing-title' },
-            'Backend: ',
-            props.backend
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'assignment-listing-url' },
+            'div',
+            { className: 'assignmentdiv' },
             _react2.default.createElement(
-                'a',
-                { href: props.gitlink },
-                'Github '
-            )
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'assignment-listing-url' },
+                'h2',
+                { className: 'assignmenttitle' },
+                props.title
+            ),
             _react2.default.createElement(
-                'a',
-                { href: props.projectlink },
-                'Go To project '
+                'p',
+                { className: 'assignmentdescription' },
+                props.description
+            ),
+            _react2.default.createElement(
+                'h3',
+                { className: 'assignmentfrontend' },
+                'Frontend: ',
+                props.frontend
+            ),
+            _react2.default.createElement(
+                'h3',
+                { className: 'assignmentbackend' },
+                'Backend: ',
+                props.backend
+            ),
+            _react2.default.createElement(
+                'p',
+                { className: 'assignmentgitlink' },
+                _react2.default.createElement(
+                    'a',
+                    { href: props.gitlink },
+                    'Github '
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                { className: 'assignmentprojectlink' },
+                _react2.default.createElement(
+                    'a',
+                    { href: props.projectlink },
+                    'Go To project '
+                )
             )
         )
     );
