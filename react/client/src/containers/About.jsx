@@ -7,8 +7,7 @@ const About = () => (
   <div className="about">
   <Nav />
     <h1 className='title'>Full Stack Developer</h1>
-    <LoginBox url="http://localhost:5000/" />
-  </div>
+      </div>
 )
 
 export default About
