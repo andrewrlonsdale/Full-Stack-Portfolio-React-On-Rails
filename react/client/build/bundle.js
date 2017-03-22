@@ -5541,15 +5541,6 @@ var Nav = function Nav(props) {
                 { to: '/contact', className: 'assignments' },
                 'Contact'
             )
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'float-right' },
-            _react2.default.createElement(
-                _reactRouter.Link,
-                { to: '/login', className: 'login' },
-                'Login'
-            )
         )
     );
 };
@@ -12358,21 +12349,27 @@ var Home = function Home() {
   return _react2.default.createElement(
     'div',
     { id: 'pic' },
-    _react2.default.createElement(_Nav2.default, null),
+    _react2.default.createElement(_Nav2.default, { className: 'message' }),
     _react2.default.createElement(
-      'h1',
-      { id: 'name' },
-      'Andrew Lonsdale'
-    ),
-    _react2.default.createElement(
-      'h1',
-      { id: 'home' },
-      'Full Stack Developer'
-    ),
-    _react2.default.createElement(
-      'a',
-      { id: 'aboutbutton', href: 'http://localhost:3000/#/about' },
-      'About'
+      'div',
+      { className: 'drop' },
+      _react2.default.createElement(
+        'h1',
+        { id: 'name' },
+        'Andrew Lonsdale'
+      ),
+      _react2.default.createElement(
+        'h1',
+        { id: 'home' },
+        'Full Stack Developer'
+      ),
+      _react2.default.createElement(
+        'a',
+        { id: 'aboutbutton', href: 'http://localhost:3000/#/about' },
+        'About Me'
+      ),
+      _react2.default.createElement('input', { type: 'checkbox', name: 'toggle', id: 'toggle' }),
+      _react2.default.createElement('label', { htmlFor: 'toggle' })
     )
   );
 };
@@ -12801,7 +12798,6 @@ var AssignmentForm = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (AssignmentForm.__proto__ || Object.getPrototypeOf(AssignmentForm)).call(this, props));
 
-    console.log(props);
     _this.state = {
       title: "",
       image: "",
@@ -27575,7 +27571,12 @@ var About = function About() {
     _react2.default.createElement(
       'h1',
       { className: 'title' },
-      'Full Stack Developer'
+      'ABOUT ME'
+    ),
+    _react2.default.createElement(
+      'h2',
+      { className: 'title' },
+      ' My name is Andrew Lonsdale, and I am a Full Stack Developer located in Edinburgh, Uk. I Have recently graduated from a software development course and looking for employment.'
     )
   );
 };

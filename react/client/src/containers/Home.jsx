@@ -5,10 +5,14 @@ import Nav from '../components/Nav';
 
 const Home = () => (
   <div id="pic">
-  <Nav />
+  <Nav className="message" />
+  <div className="drop">
   <h1 id='name'>Andrew Lonsdale</h1>
     <h1 id='home'>Full Stack Developer</h1>
-    <a id="aboutbutton" href="http://localhost:3000/#/about">About</a>
+    <a id="aboutbutton" href="http://localhost:3000/#/about">About Me</a>
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label htmlFor="toggle"></label>
+  </div>
   </div>
 )
 

@@ -43,7 +43,7 @@ class Assignments extends React.Component {
     this.setState({searchQuery: event.target.value})
   }
 
-  render(){
+   render(){
     return(
       <div className="assignments-list">
         <Nav />
