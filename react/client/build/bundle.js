@@ -12280,7 +12280,6 @@ var Assignments = function (_React$Component) {
 
       request.onload = function () {
         if (request.status === 200) {
-          console.log("request: ", request.responseText);
           var data = JSON.parse(request.responseText);
           _this2.setState({ assignments: data });
         } else {
@@ -12358,14 +12357,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Home = function Home() {
   return _react2.default.createElement(
     'div',
-    { className: 'home' },
+    { id: 'pic' },
     _react2.default.createElement(_Nav2.default, null),
     _react2.default.createElement(
       'h1',
-      { className: 'title' },
+      { id: 'name' },
+      'Andrew Lonsdale'
+    ),
+    _react2.default.createElement(
+      'h1',
+      { id: 'home' },
       'Full Stack Developer'
     ),
-    _react2.default.createElement(_LoginBox2.default, { url: 'http://localhost:5000/' })
+    _react2.default.createElement(
+      'a',
+      { id: 'aboutbutton', href: 'http://localhost:3000/#/about' },
+      'About'
+    )
   );
 };
 
@@ -12406,7 +12414,7 @@ var Login = function Login() {
     _react2.default.createElement(
       'h1',
       { className: 'title' },
-      'Andrews Portfolio'
+      'Login'
     ),
     _react2.default.createElement(_LoginBox2.default, { url: 'http://localhost:5000/' })
   );
@@ -27477,6 +27485,14 @@ var _Assignments = __webpack_require__(112);
 
 var _Assignments2 = _interopRequireDefault(_Assignments);
 
+var _About = __webpack_require__(244);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Contact = __webpack_require__(245);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 var _Login = __webpack_require__(114);
 
 var _Login2 = _interopRequireDefault(_Login);
@@ -27510,6 +27526,8 @@ var App = function (_React$Component) {
           _reactRouter.Route,
           { path: '/', component: _Main2.default },
           _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default }),
           _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _Login2.default }),
           _react2.default.createElement(_reactRouter.Route, { path: '/assignments', component: _Assignments2.default })
         )
@@ -27521,6 +27539,90 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(15);
+
+var _LoginBox = __webpack_require__(73);
+
+var _LoginBox2 = _interopRequireDefault(_LoginBox);
+
+var _Nav = __webpack_require__(43);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'about' },
+    _react2.default.createElement(_Nav2.default, null),
+    _react2.default.createElement(
+      'h1',
+      { className: 'title' },
+      'Full Stack Developer'
+    )
+  );
+};
+
+exports.default = About;
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(15);
+
+var _LoginBox = __webpack_require__(73);
+
+var _LoginBox2 = _interopRequireDefault(_LoginBox);
+
+var _Nav = __webpack_require__(43);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contact = function Contact() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'contact' },
+    _react2.default.createElement(_Nav2.default, null),
+    _react2.default.createElement(
+      'h1',
+      { className: 'title' },
+      'Full Stack Developer'
+    )
+  );
+};
+
+exports.default = Contact;
 
 /***/ })
 /******/ ]);
